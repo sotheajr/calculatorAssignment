@@ -33,7 +33,7 @@ function updateDisplay(value) {
     convertCurrency(value);
   }
 }
-
+// មុខងារគណនាលេខ
 function calculate() {
   const prev = parseFloat(previous);
   const curr = parseFloat(current);
@@ -64,7 +64,7 @@ function calculate() {
   $("#operation-hint").text("");
   updateDisplay(current);
 }
-
+// មុខងារប្តូរលុយ
 function convertCurrency(value) {
   const rate = 4000;
   const num = parseFloat(value);
@@ -77,7 +77,7 @@ function convertCurrency(value) {
     $("#converted-currency").val("");
   }
 }
-
+// មុខងារផ្លាស់ប្តូរភាសា
 function updateLanguageUI() {
   const text = langText[language];
   $("#basic-mode").text(text.basic);
